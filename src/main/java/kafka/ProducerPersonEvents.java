@@ -1,3 +1,5 @@
+package kafka;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Properties;
@@ -24,7 +26,9 @@ public class ProducerPersonEvents {
       System.out.println("Sending message");
       RecordMetadata metadata = future.get();
       System.out.println(metadata);
-      Thread.sleep(1000);
+
+
+      Thread.sleep(500);
     }
   }
 }
